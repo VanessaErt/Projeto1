@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/topnav.css">
     <script src="js/topnav.js"></script>
+    <script src="js/fale-conosco.js"></script>
     <title>Travel - Agência de Turismo</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
                 <a href="roteiros-nacionais.html">Roteiros Nacionais</a>
                 <a href="roteiros-internacionais.html">Roteiros Internacionais</a>
                 <a href="cambio.html">Câmbio</a>
-                <a href="fale-conosco.html" style=" background-color: #0F2F59;">Fale Conosco</a>
+                <a href="fale-conosco.html" style="background-color: #0F2F59;">Fale Conosco</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                   <i class="fa fa-bars"></i>
                 </a>
@@ -30,22 +30,29 @@
         <div class="content">
             <div class="fale-conosco">
                 <h2>Fale Conosco</h2>
-                    <form>
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome">
-                
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email">
-                
-                        <label for="mensagem">Mensagem</label>
-                        <textarea id="mensagem" name="mensagem"></textarea>
-                
-                        <button type="submit">Enviar</button>
-                    </form>
+                <form id="contactForm" onsubmit="return validateForm()">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+            
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+           
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+            
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
         </div>
         <div class="footer">
             <center><p>Travel - Agência de Turismo</p></center>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Mensagem enviada com sucesso!</p>
         </div>
     </div>
 </body>

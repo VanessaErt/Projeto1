@@ -1,16 +1,11 @@
-document.getElementById('verMaisBtn').addEventListener('click', function() {
-    const hiddenOffers = document.querySelectorAll('.oferta.hidden');
-    const offersToShow = 4; 
+function mostrarMaisOfertas() {
+    const ofertasOcultas = document.querySelectorAll('.oferta.hidden');
+    ofertasOcultas.forEach(oferta => {
+        oferta.classList.remove('hidden');
+    });
 
-    for (let i = 0; i < offersToShow; i++) {
-        if (hiddenOffers[i]) {
-            hiddenOffers[i].classList.remove('hidden');
-        }
-    }
-
-    const updatedHiddenOffers = document.querySelectorAll('.oferta.hidden');
-    
-    if (updatedHiddenOffers.length === 0) {
+    // Esconde o botão se não houver mais ofertas ocultas
+    if (document.querySelectorAll('.oferta.hidden').length === 0) {
         document.getElementById('verMaisBtn').style.display = 'none';
     }
-});
+}
