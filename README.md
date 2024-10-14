@@ -1,4 +1,20 @@
-Projeto do curso de Front-End (Senac) consiste no desenvolvimento de um site responsivo sobre Viagens e Turismo.  O site contará com, no mínimo, seis páginas, incluindo uma Home; uma página de Quem Somos; Roteiros Nacionais e Roteiros Internacionais; uma seção de Câmbio; e por fim, uma página de Fale Conosco. 
+# Projeto de Front-End - Viagens e Turismo
+
+Este projeto foi desenvolvido como parte do curso de Front-End do Senac e consiste em um site responsivo sobre Viagens e Turismo. O site apresenta um layout moderno e intuitivo, dividido em seis páginas principais:
+
+- **Home**: Uma página de boas-vindas que apresenta as principais atrações.
+- **Quem Somos**: Informações sobre a empresa e nossa missão.
+- **Roteiros Nacionais**: Sugestões de viagens dentro do Brasil.
+- **Roteiros Internacionais**: Destinos imperdíveis pelo mundo.
+- **Câmbio**: Informações sobre câmbio e dicas financeiras para viajantes.
+- **Fale Conosco**: Um formulário para contato e dúvidas.
+
+## Tecnologias Utilizadas
+
+- HTML
+- CSS
+- JavaScript
+
 ![1](https://github.com/user-attachments/assets/a05da9a6-49ec-4072-9d38-3add1831c6b3)
 ![2](https://github.com/user-attachments/assets/044caec9-4c45-4012-b800-a3c4cdcac865)
 ![3](https://github.com/user-attachments/assets/2db0f0bb-16d0-449f-bb8b-68258261800f)
